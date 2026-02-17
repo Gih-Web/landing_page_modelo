@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a0dad, #ff4da6);
+}
+
+.btn-purple {
+  background-color: #6c2688;
+  border-color: #8e2de2;
+  color: #fff;
+}
+
+.btn-purple:hover {
+  background-color: #c48dda;
+  border-color: #6a0dad;
+  color: #fff;
+}
+
+.btn-login{
+  background-color: #9f5dd1;
+  border-color: #8e2de2;
+  color: #fff;
+}
+
+.btn-login:hover {
+  background-color: #b88dda;
+  border-color: #6a0dad;
+  color: #fff;
+}
+
+.logo{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cor{
+  color: #fff;
+}
+
+.cor:hover {
+  color: #e278db !important;
+}
