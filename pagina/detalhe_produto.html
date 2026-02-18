@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produto - Essencial Modas</title>
+  <link rel="stylesheet" href="../css/detalhe_produto.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="hero">
+    <nav class="nav-bar">
+      <div class="logo">
+        <h3 class="text-main">Essencial <span class="text-second">Modas</span></h3>
+      </div>
+      <div class="links-redire">
+        <a class="links" href="index.html">Home</a>
+        <a class="links" href="produtos.html">Produtos</a>
+        <a class="links" href="#">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Seção do Produto -->
+  <section class="products">
+    <div class="product-container">
+
+      <!-- Galeria de imagens -->
+      <div class="product-gallery">
+        <img src="./img/2.webp" alt="Calça Skinny - Jeans Claro" class="main-img">
+        <div class="thumbs">
+          <img src="./img/2.webp" alt="Foto 1 do produto" class="thumb">
+          <img src="./img/2-2.webp" alt="Foto 2 do produto" class="thumb">
+          <img src="./img/2-3.webp" alt="Foto 3 do produto" class="thumb">
+        </div>
+      </div>
+
+      <!-- Informações do produto -->
+      <div class="product-info">
+        <h1>Calça Skinny - Jeans Claro</h1>
+        <p class="product-price">R$ 79,99</p>
+        <p class="product-description">
+          Confortável, moderna e perfeita para o dia a dia.
+          Feita com materiais de alta qualidade e atenção aos detalhes.
+        </p>
+
+        <button class="buy">Comprar Agora</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
+    <img src="./img/whatsapp-white-icon.png" alt="WhatsApp">
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Início</a>
+        <a href="produtos.html" class="footer-link">Produtos</a>
+        <a href="index.html#about" class="footer-link">Sobre</a>
+        <a href="#" class="footer-link">Contato</a>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 Essencial Modas — Todos os direitos reservados
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script para trocar imagem principal -->
+  <script>
+    const mainImg = document.querySelector('.main-img');
+    const thumbs = document.querySelectorAll('.thumb');
+
+    thumbs.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        mainImg.src = thumb.src;
+      });
+    });
+  </script>
+
+</body>
+
+</html>
